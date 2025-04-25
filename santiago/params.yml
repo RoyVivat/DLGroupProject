@@ -1,0 +1,17 @@
+# Parameters
+clean_diff_text: True
+vocab_size: 8000
+dim_size: 64
+dim_feedforward: 256
+num_layers: 2
+num_heads: 2
+dropout: 0.0
+learning_rate: 0.5
+weight_decay: 0.0
+max_len: 1024
+min_summary_length: 64
+epochs: 2
+batch_size: 64
+sample_size: 1000000
+grad_accum_steps: 1
+tokenizer: "sentencepiece"
