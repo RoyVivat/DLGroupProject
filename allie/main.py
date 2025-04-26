@@ -1,5 +1,7 @@
 from data_processor import DataEncoder, Vocabulary, create_word_lookup_csv, create_clean_csv, get_encoded_bill_data
 from torch.utils.data import DataLoader
+import torch
+import torch.nn as nn
 import yaml
 
 
@@ -18,6 +20,7 @@ encoded_train_csv = "data/encoded_train.csv"
 
 # special tokens!
 special_tokens = ['<unk>', '<start>', '<stop>']
+train_percent = 0.8
 
 
 def clean_all_data():
@@ -50,17 +53,19 @@ if __name__ == '__main__':
     #create_word_lookup()
     #create_encoded_data()
 
+    # get configs
+    print("Config Information")
+    config = get_config(config_path)
+    batch_size = config['batch_size']
+    max_len_text = config['max_len_text']
+    max_len_summary = config['max_len_summary']
+    device = 'cpu'
+
     # get vocab
+    print("Set Vocabulary")
     vocab = Vocabulary(word_lookup_csv)
 
-    # get configs
-    config = get_config(config_path)
-    device = 'cpu'
-    max_len_text, max_len_summary = config['max_len_text'], config['max_len_summary']
-
     # get data
-    bill_data = get_encoded_bill_data(encoded_train_csv, 0)
-    dataloader = DataLoader(bill_data, batch_size=config['batch_size'], shuffle=True)
-
-
-
+    print("Get Training Data")
+    train_data, valid_data = get_encoded_bill_data(encoded_train_csv, train_percent,
+                                                   max_len_text, max_len_summary, 0)
