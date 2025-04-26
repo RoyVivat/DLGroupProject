@@ -62,10 +62,7 @@ class BillDataset(Dataset):
 
     def __getitem__(self, idx):
         row = self.data.iloc[idx]
-        print(row)
-        text = torch.tensor(row['text'])
-        summary = torch.tensor(row['summary'])
-        return text, summary
+        return row['text'], row['summary']
 
 
 #########################################
@@ -111,23 +108,35 @@ class DataEncoder:
 ###############################################
 # Static Data Processing Methods              #
 ###############################################
-def get_encoded_bill_data(encoded_data_path, def_idx):
+def get_encoded_bill_data(encoded_data_path, train_percent, max_len_text,
+                          max_len_summary, def_idx):
     encoded_str_df = pd.read_csv(encoded_data_path)
     encoded_str_texts = encoded_str_df['text']
     encoded_str_summaries = encoded_str_df['summary']
 
     num_samples = len(encoded_str_texts)
+    num_train = int(num_samples * train_percent)
 
-    texts = []
-    summaries = []
+    train_texts = []
+    train_summaries = []
+    valid_texts = []
+    valid_summaries = []
 
     for i in range(num_samples):
-        texts.append(idx_str_to_int_list(encoded_str_texts[i], def_idx))
-        summaries.append(idx_str_to_int_list(encoded_str_summaries[i], def_idx))
+        text_tensor = idx_str_to_tensor(encoded_str_texts[i], max_len_text, def_idx)
+        sum_tensor = idx_str_to_tensor(encoded_str_summaries[i], max_len_summary, def_idx)
+        if i < num_train:
+            train_texts.append(text_tensor)
+            train_summaries.append(sum_tensor)
+        else:
+            valid_texts.append(text_tensor)
+            valid_summaries.append(sum_tensor)
 
-    bill_dict = {'text': texts, 'summary': summaries}
-    bill_df = pd.DataFrame(bill_dict)
-    return BillDataset(bill_df)
+    train_bill_dict = {'text': train_texts, 'summary': train_summaries}
+    train_bill_df = pd.DataFrame(train_bill_dict)
+    valid_bill_dict = {'text': valid_texts, 'summary': valid_summaries}
+    valid_bill_df = pd.DataFrame(valid_bill_dict)
+    return BillDataset(train_bill_df), BillDataset(valid_bill_df)
 
 
 def create_word_lookup_csv(csv_all_data_path: str, word_lookup_csv: str, special_tokens=None):
@@ -195,16 +204,20 @@ def create_word_dict(word_set: set, special_tokens: list) -> dict:
     return word_dict
 
 
-def idx_str_to_int_list(idx_str: str, def_idx: int) -> list:
+def idx_str_to_tensor(idx_str: str, max_len: int, def_idx: int) -> torch.Tensor:
     idx_list = idx_str.strip().split()
-    int_list = []
+    idx_tensor = torch.zeros(max_len)
+    if def_idx != 0:
+        # tensor is filled with 0s, so expect that def_idx = 0
+        print("error, default idx must be 0")
     for i in range(len(idx_list)):
+        if i >= max_len:
+            print(f"Truncated data. Max Length={max_len}. Actual Length={len(idx_list)}")
+            return idx_tensor
         idx = idx_list[i]
         if idx.isdigit():
-            int_list.append(int(idx))
-        else:
-            int_list.append(def_idx)
-    return int_list
+            idx_tensor[i] = int(idx)
+    return idx_tensor
 
 
 def remove_angle_brackets(my_str, idx):
