@@ -1,1 +1,11 @@
-readme
+# Readme
+
+## To Run:
+Download code. In main.py, the defined csv_path variables can be updated accordingly.
+In the main method, remove the comments in order to run the methods that clean data and create necessary csv files.
+
+## Processing methods
+All texts and summaries are processed in order to create a 'word_lookup.csv' file. This file maps every word to an integer index.
+Then, the training data is processed such that each summary begins with a '<start>' token and ends with a '<stop>' token. Each word
+is then mapped to the corresponding index. This indexed version of training bill data will be saved into 'encoded_train.csv'. These files
+are for increased efficiency in subsequent runs of the program.
