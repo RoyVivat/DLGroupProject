@@ -1,3 +1,7 @@
+# not the most up-to-date
+# for up-to-date code, see ipynb file
+
+
 from data_processor import DataEncoder, Vocabulary, create_word_lookup_csv, create_clean_csv, get_encoded_bill_data
 from torch.utils.data import DataLoader
 import torch
