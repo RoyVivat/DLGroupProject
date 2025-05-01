@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/9a2adc5c71c44fb8973feccd232a924d/artifacts
+end_time: 1746031929269
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 9a2adc5c71c44fb8973feccd232a924d
+run_name: thoughtful-robin-34
+run_uuid: 9a2adc5c71c44fb8973feccd232a924d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746030299702
+status: 3
+tags: []
+user_id: root

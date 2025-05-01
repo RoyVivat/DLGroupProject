@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/8795df13defc4d42ab18d677b6b9d84e/artifacts
+end_time: 1745985100871
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 8795df13defc4d42ab18d677b6b9d84e
+run_name: adaptable-snake-499
+run_uuid: 8795df13defc4d42ab18d677b6b9d84e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745973070666
+status: 3
+tags: []
+user_id: root

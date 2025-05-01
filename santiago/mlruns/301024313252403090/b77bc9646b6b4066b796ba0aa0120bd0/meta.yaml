@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/b77bc9646b6b4066b796ba0aa0120bd0/artifacts
+end_time: 1745351445171
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: b77bc9646b6b4066b796ba0aa0120bd0
+run_name: caring-finch-693
+run_uuid: b77bc9646b6b4066b796ba0aa0120bd0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745351442142
+status: 3
+tags: []
+user_id: root

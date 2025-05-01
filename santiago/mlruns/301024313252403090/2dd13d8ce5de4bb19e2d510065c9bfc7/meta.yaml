@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/2dd13d8ce5de4bb19e2d510065c9bfc7/artifacts
+end_time: 1745446452541
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 2dd13d8ce5de4bb19e2d510065c9bfc7
+run_name: sincere-mule-146
+run_uuid: 2dd13d8ce5de4bb19e2d510065c9bfc7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745445842136
+status: 3
+tags: []
+user_id: root

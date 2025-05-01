@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/9cc4c3aac4494ff28e9e9b647ff287b9/artifacts
+end_time: 1745171781314
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 9cc4c3aac4494ff28e9e9b647ff287b9
+run_name: amazing-squirrel-42
+run_uuid: 9cc4c3aac4494ff28e9e9b647ff287b9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745171770953
+status: 3
+tags: []
+user_id: santiagovelez

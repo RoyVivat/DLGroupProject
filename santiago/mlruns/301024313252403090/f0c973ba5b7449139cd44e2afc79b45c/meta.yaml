@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/f0c973ba5b7449139cd44e2afc79b45c/artifacts
+end_time: 1745238710620
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: f0c973ba5b7449139cd44e2afc79b45c
+run_name: amusing-fish-461
+run_uuid: f0c973ba5b7449139cd44e2afc79b45c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745238501814
+status: 3
+tags: []
+user_id: root

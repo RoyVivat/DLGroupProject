@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/1b207790d7ad4ec9abf3aa0e06421488/artifacts
+end_time: 1745172873436
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 1b207790d7ad4ec9abf3aa0e06421488
+run_name: entertaining-fox-742
+run_uuid: 1b207790d7ad4ec9abf3aa0e06421488
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745172871598
+status: 3
+tags: []
+user_id: root

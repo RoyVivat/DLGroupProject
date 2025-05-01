@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/2986cf04f60244388db7ea73e3a0a9ef/artifacts
+end_time: 1745168238642
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 2986cf04f60244388db7ea73e3a0a9ef
+run_name: smiling-duck-248
+run_uuid: 2986cf04f60244388db7ea73e3a0a9ef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745165499385
+status: 3
+tags: []
+user_id: santiagovelez

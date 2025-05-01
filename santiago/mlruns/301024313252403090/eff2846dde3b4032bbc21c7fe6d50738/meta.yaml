@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/eff2846dde3b4032bbc21c7fe6d50738/artifacts
+end_time: 1745551209751
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: eff2846dde3b4032bbc21c7fe6d50738
+run_name: rumbling-roo-81
+run_uuid: eff2846dde3b4032bbc21c7fe6d50738
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745550987282
+status: 3
+tags: []
+user_id: root

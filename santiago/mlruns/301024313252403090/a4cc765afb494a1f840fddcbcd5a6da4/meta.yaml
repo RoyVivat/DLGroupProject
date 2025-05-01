@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/a4cc765afb494a1f840fddcbcd5a6da4/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: a4cc765afb494a1f840fddcbcd5a6da4
+run_name: bedecked-panda-821
+run_uuid: a4cc765afb494a1f840fddcbcd5a6da4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746061492418
+status: 1
+tags: []
+user_id: root

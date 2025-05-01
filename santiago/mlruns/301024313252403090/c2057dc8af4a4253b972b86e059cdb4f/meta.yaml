@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/c2057dc8af4a4253b972b86e059cdb4f/artifacts
+end_time: 1745171591628
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: c2057dc8af4a4253b972b86e059cdb4f
+run_name: gifted-jay-340
+run_uuid: c2057dc8af4a4253b972b86e059cdb4f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745171557328
+status: 3
+tags: []
+user_id: santiagovelez

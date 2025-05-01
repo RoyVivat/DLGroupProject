@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/e401bc9efdab4692b9c88b9fa4c9d7d7/artifacts
+end_time: 1745552012581
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: e401bc9efdab4692b9c88b9fa4c9d7d7
+run_name: nebulous-mole-984
+run_uuid: e401bc9efdab4692b9c88b9fa4c9d7d7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745551543776
+status: 3
+tags: []
+user_id: root

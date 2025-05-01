@@ -62,7 +62,7 @@ class LanguageModel(nn.Module):
         return x
 
     @torch.no_grad()
-    def generate(self, diff_text):
+    def generate(self, diff_text, beam_size=1, length_penalty=1.0):
         # Set model to evaluation mode
         self.eval()
 
@@ -84,22 +84,61 @@ class LanguageModel(nn.Module):
         ids = ids[-(self.max_len - 1):]
         seq = torch.tensor(ids, device=self.device)
 
-        # Predict one token at a time
-        while len(seq) < self.max_len:
-            next_id = self(seq.unsqueeze(0))[0, -1].argmax(-1)
-            seq = torch.cat([seq, next_id.unsqueeze(0)])
-            if next_id.item() == self.eos_id:
-                break
+        if beam_size == 1:
+            # Predict one token at a time
+            while len(seq) < self.max_len:
+                next_id = self(seq.unsqueeze(0))[0, -1].argmax(-1)
+                seq = torch.cat([seq, next_id.unsqueeze(0)])
+                if next_id.item() == self.eos_id:
+                    break
 
-        # Remove summary
-        sep_mask = (seq == self.sep_id).nonzero(as_tuple=True)
-        if len(sep_mask[0]) == 0:
-            return ""
-        start = sep_mask[0][0] + 1
-        end = (seq == self.eos_id).nonzero(as_tuple=True)[0][0] if (seq == self.eos_id).any() else len(seq)
-        ids = seq[start:end].tolist()
+            # Remove summary
+            sep_mask = (seq == self.sep_id).nonzero(as_tuple=True)
+            if len(sep_mask[0]) == 0:
+                return ""
+            start = sep_mask[0][0] + 1
+            end = (seq == self.eos_id).nonzero(as_tuple=True)[0][0] if (seq == self.eos_id).any() else len(seq)
+            ids = seq[start:end].tolist()
 
-        # Decode into actual text
-        if hasattr(self.tokenizer, "sp"):
-            return self.tokenizer.sp.decode(ids)
-        return " ".join(self.tokenizer.decode(i) for i in ids)
+            # Decode into actual text
+            if hasattr(self.tokenizer, "sp"):
+                return self.tokenizer.sp.decode(ids)
+            return " ".join(self.tokenizer.decode(i) for i in ids)
+
+        else:
+            # Beam search
+            beams = [(seq.clone(), 0.0)]
+            finished = []
+
+            while beams and len(finished) < beam_size:
+                new_beams = []
+                for seq_, score_ in beams:
+                    if seq_[-1].item() == self.eos_id or len(seq_) >= self.max_len:
+                        finished.append((seq_, score_))
+                        continue
+
+                    logits = self(seq_.unsqueeze(0))[0, -1]          # (V,)
+                    log_probs, top_ids = logits.log_softmax(-1).topk(beam_size)
+                    for lp, idx in zip(log_probs, top_ids):
+                        new_seq  = torch.cat([seq_, idx.unsqueeze(0)])
+                        new_beams.append((new_seq, score_ + lp.item()))
+
+                # length-penalised sorting
+                beams = sorted(
+                    new_beams, 
+                    key=lambda x: x[1] / ((5 + len(x[0])) ** length_penalty), 
+                    reverse=True
+                )[:beam_size]
+
+                if not new_beams:
+                    break
+
+            best_seq = max(finished + beams, key=lambda x: x[1])[0]
+            sep_pos = (best_seq == self.sep_id).nonzero(as_tuple=True)[0][0] + 1
+            eos_pos = (best_seq == self.eos_id).nonzero(as_tuple=True)[0]
+            eos_pos = eos_pos[0] if len(eos_pos) else len(best_seq)
+            ids     = best_seq[sep_pos:eos_pos].tolist()
+
+            if hasattr(self.tokenizer, "sp"):
+                return self.tokenizer.sp.decode(ids)
+            return " ".join(self.tokenizer.decode(i) for i in ids)

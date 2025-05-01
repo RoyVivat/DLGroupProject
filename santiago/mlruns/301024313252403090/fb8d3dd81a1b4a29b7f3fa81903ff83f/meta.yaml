@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/fb8d3dd81a1b4a29b7f3fa81903ff83f/artifacts
+end_time: 1745547214212
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: fb8d3dd81a1b4a29b7f3fa81903ff83f
+run_name: exultant-fowl-146
+run_uuid: fb8d3dd81a1b4a29b7f3fa81903ff83f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745547213881
+status: 3
+tags: []
+user_id: root

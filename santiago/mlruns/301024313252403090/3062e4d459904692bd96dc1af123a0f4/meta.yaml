@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/3062e4d459904692bd96dc1af123a0f4/artifacts
+end_time: 1745238167416
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 3062e4d459904692bd96dc1af123a0f4
+run_name: melodic-eel-166
+run_uuid: 3062e4d459904692bd96dc1af123a0f4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745238166351
+status: 3
+tags: []
+user_id: root

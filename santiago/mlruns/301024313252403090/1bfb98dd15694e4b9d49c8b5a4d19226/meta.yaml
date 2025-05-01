@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/1bfb98dd15694e4b9d49c8b5a4d19226/artifacts
+end_time: 1745439286162
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 1bfb98dd15694e4b9d49c8b5a4d19226
+run_name: spiffy-mare-872
+run_uuid: 1bfb98dd15694e4b9d49c8b5a4d19226
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745439274170
+status: 3
+tags: []
+user_id: root

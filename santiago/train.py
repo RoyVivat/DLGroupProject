@@ -1,5 +1,6 @@
 # Importing libraries
 print("Importing libraries...")
+from math import ceil
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -15,6 +16,9 @@ import yaml
 from model import LanguageModel
 from utils import diff_bill_formattter, compute_rouge
 from data_tokenizers import tokenizers_dict
+from transformers import get_linear_schedule_with_warmup
+from utils import dynamic_pad_collate 
+
 
 # Load parameters
 with open('params.yml', 'r') as f:
@@ -37,6 +41,11 @@ batch_size = params['batch_size']
 sample_size = params['sample_size']
 grad_accum_steps = params['grad_accum_steps']
 tokenizer_name = params['tokenizer']
+label_smoothing = params['label_smoothing']
+warmup_steps = params['warmup_steps']
+beam_size_val = params['beam_size_val']
+beam_size_sample = params['beam_size_sample']
+length_penalty = params['length_penalty']
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 
@@ -73,8 +82,12 @@ y = sequence[:, 1:].clone()
 # Position skipping for bills in cross entropy
 sep_id = tokenizer.sep_id
 pad_id = tokenizer.pad_id
+eos_id = tokenizer.eos_id
+# Masking after the summary is completed
 before_sep = torch.cumsum((y == sep_id), dim=1) == 0
-y.masked_fill_(before_sep | (y == pad_id), -100)
+after_eos = torch.cumsum((y == eos_id), dim=1) > 0
+ignore = before_sep | after_eos | (y == pad_id)
+y.masked_fill_(ignore, -100)
 
 print("Splitting data into train/val sets...")
 # Splitting the data
@@ -83,6 +96,20 @@ x_train, x_val, y_train, y_val = train_test_split(x, y, test_size=0.1, random_st
 # Create TensorDataset
 train_dataset = TensorDataset(x_train, y_train)
 val_dataset = TensorDataset(x_val, y_val)
+
+print("Creating data loaders...")
+train_loader = DataLoader(
+    train_dataset,
+    batch_size=batch_size,
+    shuffle=True,
+    collate_fn=lambda b: dynamic_pad_collate(b, pad_id)
+)
+val_loader = DataLoader(
+    val_dataset,
+    batch_size=batch_size,
+    shuffle=False,
+    collate_fn=lambda b: dynamic_pad_collate(b, pad_id)
+)
 
 print("Initializing model...")
 # Loading the model
@@ -97,18 +124,27 @@ model = LanguageModel(
     device=device,
 ).to(device)
 # Setting the optimizer and loss function
-optimizer = optim.Adam(
+optimizer = optim.AdamW(
     model.parameters(),
     lr=learning_rate,
     betas=(0.9, 0.999),
     eps=1e-8,
     weight_decay=weight_decay
 )
+# Set learning rate scheduler
+updates_per_epoch = ceil(len(train_loader) / grad_accum_steps)
+total_updates = epochs * updates_per_epoch
+warmup_steps = int(0.06 * total_updates) if warmup_steps is None else warmup_steps
+scheduler = get_linear_schedule_with_warmup(
+    optimizer,
+    num_warmup_steps  = warmup_steps,
+    num_training_steps= total_updates,
+)
 # Automatic Mixed Precision (only if CUDA is available)
 use_amp = device == "cuda"
 scaler = torch.amp.GradScaler("cuda", enabled=use_amp)
 # Evaluation criterion
-criterion = nn.CrossEntropyLoss(ignore_index=-100)
+criterion = nn.CrossEntropyLoss(ignore_index=-100, label_smoothing=label_smoothing)
 # Accuracy metric
 accuracy = Accuracy(
     task="multiclass",
@@ -130,6 +166,7 @@ mlflow.log_params({
     "dropout": dropout,
     "learning_rate": learning_rate,
     "weight_decay": weight_decay,
+    "warmup_steps": warmup_steps,
     "grad_accum_steps": grad_accum_steps,
     "weight_updates_freq": batch_size * grad_accum_steps,
     "max_len": max_len,
@@ -141,6 +178,7 @@ mlflow.log_params({
     "train_size": len(train_dataset),
     "val_size": len(val_dataset),
     "tokenizer": tokenizer_name,
+    "label_smoothing": label_smoothing,
 })
 
 # Log token length stats
@@ -148,10 +186,7 @@ sequence_lengths_stats = tokenizer.get_sequence_statistics(sequence_lengths)
 sequence_lengths_stats = {f"sequence_length_{k.replace('%', '_perc')}": v for k, v in sequence_lengths_stats.items()}
 mlflow.log_params(sequence_lengths_stats)
 
-print("Creating data loaders...")
-# Create DataLoader
-train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
-val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
+
 
 print("Starting training...")
 # Starts model training
@@ -177,11 +212,13 @@ for epoch in range(epochs):
         #Gradient accumulation
         if (i + 1) % grad_accum_steps == 0 or (i + 1) == len(train_loader):
             # clip unscaled grads 
+            scaler.unscale_(optimizer)
             torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
             # Update weights
             scaler.step(optimizer)
             scaler.update()
             # Reset gradients
+            scheduler.step()
             optimizer.zero_grad(set_to_none=True)
         batch_train_losses.append(train_loss.item())
         batch_train_accuracies.append(accuracy(y_hat_train_flat.detach().cpu(), y_train_flat.detach().cpu()))
@@ -189,7 +226,8 @@ for epoch in range(epochs):
         # Log batch-level metrics to MLflow
         mlflow.log_metrics({
             "batch_train_loss": train_loss.item(),
-            "batch_train_accuracy": batch_train_accuracies[-1]
+            "batch_train_accuracy": batch_train_accuracies[-1],
+            "learning_rate": scheduler.get_last_lr()[0]
         }, step=epoch * len(train_loader) + i)
     print("Validating...")
     # Val loop
@@ -216,7 +254,7 @@ for epoch in range(epochs):
     model.eval()
     with torch.no_grad():
         for diff in val_diffs:
-            preds.append(model.generate(diff))
+            preds.append(model.generate(diff, beam_size=beam_size_val, length_penalty=length_penalty))
     
     refs = val_summaries
     rouge_dict = compute_rouge(preds, refs)
@@ -253,7 +291,7 @@ mlflow.log_artifact("model.pth")
 print("Running inference on five examples...")
 for i in range(5):
     example_diff = df.loc[i, "diff_text"]
-    example_summary = model.generate(example_diff)
+    example_summary = model.generate(example_diff, beam_size=beam_size_sample, length_penalty=length_penalty)
     print(f"Example Diff: {example_diff}")
     print(f"Example Summary: {example_summary}")
     print("-"*100)

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/eddd41faecf64bc9a7471be38ce27f94/artifacts
+end_time: 1746047759694
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: eddd41faecf64bc9a7471be38ce27f94
+run_name: nimble-yak-738
+run_uuid: eddd41faecf64bc9a7471be38ce27f94
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746045081219
+status: 3
+tags: []
+user_id: root

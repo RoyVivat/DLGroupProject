@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/61fdd84b097a45c48ea42793f1c88126/artifacts
+end_time: 1746034361629
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 61fdd84b097a45c48ea42793f1c88126
+run_name: incongruous-bat-279
+run_uuid: 61fdd84b097a45c48ea42793f1c88126
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746030315749
+status: 3
+tags: []
+user_id: root

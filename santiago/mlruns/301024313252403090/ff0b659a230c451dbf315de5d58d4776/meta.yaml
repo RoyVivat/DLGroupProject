@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/ff0b659a230c451dbf315de5d58d4776/artifacts
+end_time: 1745548904022
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: ff0b659a230c451dbf315de5d58d4776
+run_name: caring-gnu-978
+run_uuid: ff0b659a230c451dbf315de5d58d4776
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745548895118
+status: 3
+tags: []
+user_id: root

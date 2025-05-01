@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/fac1f4dd7bd847a699015da4f0cb15aa/artifacts
+end_time: 1745240289248
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: fac1f4dd7bd847a699015da4f0cb15aa
+run_name: chill-foal-954
+run_uuid: fac1f4dd7bd847a699015da4f0cb15aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745240288685
+status: 3
+tags: []
+user_id: root

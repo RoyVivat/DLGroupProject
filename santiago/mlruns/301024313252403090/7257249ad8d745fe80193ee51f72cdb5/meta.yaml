@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/7257249ad8d745fe80193ee51f72cdb5/artifacts
+end_time: 1746029632320
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 7257249ad8d745fe80193ee51f72cdb5
+run_name: adaptable-roo-156
+run_uuid: 7257249ad8d745fe80193ee51f72cdb5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746029626510
+status: 3
+tags: []
+user_id: root

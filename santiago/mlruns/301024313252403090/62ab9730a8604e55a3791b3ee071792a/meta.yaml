@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/62ab9730a8604e55a3791b3ee071792a/artifacts
+end_time: 1745976286430
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 62ab9730a8604e55a3791b3ee071792a
+run_name: bald-gnu-367
+run_uuid: 62ab9730a8604e55a3791b3ee071792a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745973066219
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/f84e4adcd87d4067b79662bddad92e9c/artifacts
+end_time: 1745446459070
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: f84e4adcd87d4067b79662bddad92e9c
+run_name: invincible-gnu-996
+run_uuid: f84e4adcd87d4067b79662bddad92e9c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745446453223
+status: 3
+tags: []
+user_id: root

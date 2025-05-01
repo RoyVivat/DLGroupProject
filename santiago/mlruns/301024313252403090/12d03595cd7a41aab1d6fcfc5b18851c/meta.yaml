@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/12d03595cd7a41aab1d6fcfc5b18851c/artifacts
+end_time: 1745422828658
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 12d03595cd7a41aab1d6fcfc5b18851c
+run_name: dazzling-shark-425
+run_uuid: 12d03595cd7a41aab1d6fcfc5b18851c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745422828371
+status: 3
+tags: []
+user_id: root

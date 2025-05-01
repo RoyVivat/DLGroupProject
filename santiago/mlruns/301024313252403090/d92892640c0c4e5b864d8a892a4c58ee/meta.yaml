@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/d92892640c0c4e5b864d8a892a4c58ee/artifacts
+end_time: 1745371150462
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: d92892640c0c4e5b864d8a892a4c58ee
+run_name: secretive-owl-8
+run_uuid: d92892640c0c4e5b864d8a892a4c58ee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745369490201
+status: 3
+tags: []
+user_id: root

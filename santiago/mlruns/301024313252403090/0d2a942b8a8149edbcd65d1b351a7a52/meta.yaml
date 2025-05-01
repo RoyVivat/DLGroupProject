@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/0d2a942b8a8149edbcd65d1b351a7a52/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 0d2a942b8a8149edbcd65d1b351a7a52
+run_name: wise-pug-400
+run_uuid: 0d2a942b8a8149edbcd65d1b351a7a52
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745425592497
+status: 1
+tags: []
+user_id: root

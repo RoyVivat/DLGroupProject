@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/ef2f6755c61f422b8056e3b26826bd72/artifacts
+end_time: 1745875778093
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: ef2f6755c61f422b8056e3b26826bd72
+run_name: likeable-grouse-978
+run_uuid: ef2f6755c61f422b8056e3b26826bd72
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745874528391
+status: 3
+tags: []
+user_id: root

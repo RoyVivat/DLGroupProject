@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/94c0688f71274bdab0c2771cceceeaea/artifacts
+end_time: 1746038582759
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 94c0688f71274bdab0c2771cceceeaea
+run_name: polite-tern-436
+run_uuid: 94c0688f71274bdab0c2771cceceeaea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746035105805
+status: 3
+tags: []
+user_id: root

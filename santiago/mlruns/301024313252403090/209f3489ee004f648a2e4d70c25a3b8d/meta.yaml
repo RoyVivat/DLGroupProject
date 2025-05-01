@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/209f3489ee004f648a2e4d70c25a3b8d/artifacts
+end_time: 1745439094984
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 209f3489ee004f648a2e4d70c25a3b8d
+run_name: tasteful-crow-492
+run_uuid: 209f3489ee004f648a2e4d70c25a3b8d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745439089097
+status: 3
+tags: []
+user_id: root

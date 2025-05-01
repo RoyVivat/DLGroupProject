@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/2479d492e8eb4099b8f35313760ac679/artifacts
+end_time: 1745546982283
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 2479d492e8eb4099b8f35313760ac679
+run_name: thundering-gnu-50
+run_uuid: 2479d492e8eb4099b8f35313760ac679
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745546981955
+status: 3
+tags: []
+user_id: root

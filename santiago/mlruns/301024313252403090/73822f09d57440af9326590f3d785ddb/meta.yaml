@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/73822f09d57440af9326590f3d785ddb/artifacts
+end_time: 1745441495074
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 73822f09d57440af9326590f3d785ddb
+run_name: sincere-gnat-624
+run_uuid: 73822f09d57440af9326590f3d785ddb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745440795205
+status: 3
+tags: []
+user_id: root

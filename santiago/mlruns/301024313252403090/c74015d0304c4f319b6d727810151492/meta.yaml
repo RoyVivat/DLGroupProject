@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/c74015d0304c4f319b6d727810151492/artifacts
+end_time: 1745440251259
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: c74015d0304c4f319b6d727810151492
+run_name: sassy-gull-63
+run_uuid: c74015d0304c4f319b6d727810151492
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745440246621
+status: 3
+tags: []
+user_id: root

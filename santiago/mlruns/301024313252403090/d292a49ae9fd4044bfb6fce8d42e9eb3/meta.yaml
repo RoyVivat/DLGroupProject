@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/d292a49ae9fd4044bfb6fce8d42e9eb3/artifacts
+end_time: 1745439740081
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: d292a49ae9fd4044bfb6fce8d42e9eb3
+run_name: unruly-cub-713
+run_uuid: d292a49ae9fd4044bfb6fce8d42e9eb3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745439323074
+status: 3
+tags: []
+user_id: root

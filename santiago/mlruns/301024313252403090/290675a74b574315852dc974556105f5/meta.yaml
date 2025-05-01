@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/290675a74b574315852dc974556105f5/artifacts
+end_time: 1745978016086
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 290675a74b574315852dc974556105f5
+run_name: stylish-crab-757
+run_uuid: 290675a74b574315852dc974556105f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745976389907
+status: 3
+tags: []
+user_id: root

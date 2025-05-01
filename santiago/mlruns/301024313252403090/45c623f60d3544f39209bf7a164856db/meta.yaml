@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/45c623f60d3544f39209bf7a164856db/artifacts
+end_time: 1745939928059
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 45c623f60d3544f39209bf7a164856db
+run_name: gaudy-fowl-338
+run_uuid: 45c623f60d3544f39209bf7a164856db
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745936653316
+status: 3
+tags: []
+user_id: root

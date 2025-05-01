@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/54d081354481464c8dd69125a6d3e941/artifacts
+end_time: 1745279514732
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 54d081354481464c8dd69125a6d3e941
+run_name: upset-ape-62
+run_uuid: 54d081354481464c8dd69125a6d3e941
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745276675183
+status: 3
+tags: []
+user_id: root

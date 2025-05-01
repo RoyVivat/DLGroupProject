@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/7b3235b3fd8144ea95a46a01f33e80c7/artifacts
+end_time: 1745545813889
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 7b3235b3fd8144ea95a46a01f33e80c7
+run_name: bustling-stoat-866
+run_uuid: 7b3235b3fd8144ea95a46a01f33e80c7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745545813563
+status: 3
+tags: []
+user_id: root

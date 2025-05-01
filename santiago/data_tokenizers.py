@@ -80,27 +80,28 @@ class SpaceTokenizer(BaseTokenizer):
 
 class SentencePieceTokenizer(BaseTokenizer):
     def __init__(self, sequence_raw, vocab_size=16000, max_len=1024, min_summary_length=64):
-        SP_MODEL = "spm.model"
+        SP_MODEL = f"spm_{vocab_size}.model"
         SPECIAL   = ["<pad>", "<bos>", "<sep>", "<eos>"]
 
         if not Path(SP_MODEL).exists():
             print("Training SentencePiece model …")
-            # write a temporary corpus file: ONE sentence per line
+            # write a temporary corpus file one sentence per line
             with tempfile.NamedTemporaryFile(mode="w", delete=False) as tmp:
-                for line in sequence_raw:          # <- this is your diff+summary list
-                    # light clean-up (same as before, but cheaper)
+                for line in sequence_raw:          
+                    # light clean-up
                     l = line.replace("<", " <").replace(">", "> ").strip()
                     tmp.write(l + "\n")
                 corpus_path = tmp.name
 
             spm.SentencePieceTrainer.train(
-                input              = corpus_path,
-                model_prefix       = "spm",
-                vocab_size         = vocab_size - len(SPECIAL),
-                pad_id             = 0,             # will be overwritten below
-                unk_id             = 1,             # SentencePiece default
-                bos_id             = -1, eos_id=-1, # we’ll add ours
-                user_defined_symbols = SPECIAL      # appended after “normal” vocab
+                input = corpus_path,
+                model_prefix = f"spm_{vocab_size}",
+                vocab_size = vocab_size - len(SPECIAL),
+                pad_id = 0,
+                unk_id = 1,
+                bos_id = -1, 
+                eos_id=-1,
+                user_defined_symbols = SPECIAL
             )
             os.remove(corpus_path)
 

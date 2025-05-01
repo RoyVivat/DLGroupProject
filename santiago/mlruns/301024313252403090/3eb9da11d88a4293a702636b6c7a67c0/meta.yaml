@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/3eb9da11d88a4293a702636b6c7a67c0/artifacts
+end_time: 1746029876480
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 3eb9da11d88a4293a702636b6c7a67c0
+run_name: fun-flea-121
+run_uuid: 3eb9da11d88a4293a702636b6c7a67c0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746029867422
+status: 3
+tags: []
+user_id: root

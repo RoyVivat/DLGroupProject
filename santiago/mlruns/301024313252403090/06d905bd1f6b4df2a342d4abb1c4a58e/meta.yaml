@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/06d905bd1f6b4df2a342d4abb1c4a58e/artifacts
+end_time: 1745239414230
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 06d905bd1f6b4df2a342d4abb1c4a58e
+run_name: upset-dog-365
+run_uuid: 06d905bd1f6b4df2a342d4abb1c4a58e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745239412290
+status: 3
+tags: []
+user_id: root

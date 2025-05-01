@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/306c7f3b32d546998239e90c50fa6ef6/artifacts
+end_time: 1745440575023
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 306c7f3b32d546998239e90c50fa6ef6
+run_name: stately-stork-686
+run_uuid: 306c7f3b32d546998239e90c50fa6ef6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745440570302
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/0157fd6de65c4fb9896432997c1976e2/artifacts
+deleted_time: 1745266579600
+end_time: 1745164180793
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: deleted
+run_id: 0157fd6de65c4fb9896432997c1976e2
+run_name: invincible-cow-537
+run_uuid: 0157fd6de65c4fb9896432997c1976e2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745164161318
+status: 3
+tags: []
+user_id: santiagovelez

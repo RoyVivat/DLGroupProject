@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/7b35f08e85c04380ae923d4425dda638/artifacts
+end_time: 1745240098419
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 7b35f08e85c04380ae923d4425dda638
+run_name: enthused-sloth-510
+run_uuid: 7b35f08e85c04380ae923d4425dda638
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745240096302
+status: 3
+tags: []
+user_id: root

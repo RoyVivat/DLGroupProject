@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/3b072b11c94e4cc58eb6056c3cbb9b85/artifacts
+end_time: 1745250097008
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 3b072b11c94e4cc58eb6056c3cbb9b85
+run_name: angry-wren-356
+run_uuid: 3b072b11c94e4cc58eb6056c3cbb9b85
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745250095603
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/8a006023b8c04f4ea20809e8055fe8a0/artifacts
+end_time: 1746029587248
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 8a006023b8c04f4ea20809e8055fe8a0
+run_name: victorious-mare-20
+run_uuid: 8a006023b8c04f4ea20809e8055fe8a0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746029585870
+status: 3
+tags: []
+user_id: root

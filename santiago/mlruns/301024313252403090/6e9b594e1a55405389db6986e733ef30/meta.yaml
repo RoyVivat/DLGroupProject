@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/6e9b594e1a55405389db6986e733ef30/artifacts
+end_time: 1745549293672
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 6e9b594e1a55405389db6986e733ef30
+run_name: amazing-wren-37
+run_uuid: 6e9b594e1a55405389db6986e733ef30
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745549284172
+status: 3
+tags: []
+user_id: root

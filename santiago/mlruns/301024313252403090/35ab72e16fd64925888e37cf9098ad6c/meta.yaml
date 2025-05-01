@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/35ab72e16fd64925888e37cf9098ad6c/artifacts
+end_time: 1746042746095
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 35ab72e16fd64925888e37cf9098ad6c
+run_name: fun-sponge-233
+run_uuid: 35ab72e16fd64925888e37cf9098ad6c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746040615276
+status: 3
+tags: []
+user_id: root

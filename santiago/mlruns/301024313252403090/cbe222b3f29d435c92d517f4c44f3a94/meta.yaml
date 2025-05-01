@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/cbe222b3f29d435c92d517f4c44f3a94/artifacts
+end_time: 1746050682306
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: cbe222b3f29d435c92d517f4c44f3a94
+run_name: fun-quail-860
+run_uuid: cbe222b3f29d435c92d517f4c44f3a94
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746048577547
+status: 3
+tags: []
+user_id: root

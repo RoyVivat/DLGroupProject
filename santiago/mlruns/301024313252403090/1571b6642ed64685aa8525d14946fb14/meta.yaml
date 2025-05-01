@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/1571b6642ed64685aa8525d14946fb14/artifacts
+end_time: 1745972772716
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 1571b6642ed64685aa8525d14946fb14
+run_name: invincible-moth-748
+run_uuid: 1571b6642ed64685aa8525d14946fb14
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745969567501
+status: 3
+tags: []
+user_id: root

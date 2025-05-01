@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/a4b3c262b8984b02afe7a51436a86285/artifacts
+end_time: 1745549246196
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: a4b3c262b8984b02afe7a51436a86285
+run_name: carefree-snipe-624
+run_uuid: a4b3c262b8984b02afe7a51436a86285
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745549236390
+status: 3
+tags: []
+user_id: root

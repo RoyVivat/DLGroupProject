@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/88ee3ced16444c66b174ebcf28e2b13c/artifacts
+end_time: 1745957436150
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 88ee3ced16444c66b174ebcf28e2b13c
+run_name: respected-owl-86
+run_uuid: 88ee3ced16444c66b174ebcf28e2b13c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745955808568
+status: 3
+tags: []
+user_id: root

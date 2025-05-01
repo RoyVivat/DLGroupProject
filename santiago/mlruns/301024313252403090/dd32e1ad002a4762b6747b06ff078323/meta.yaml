@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/dd32e1ad002a4762b6747b06ff078323/artifacts
+end_time: 1745172875552
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: dd32e1ad002a4762b6747b06ff078323
+run_name: traveling-wolf-928
+run_uuid: dd32e1ad002a4762b6747b06ff078323
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745172873472
+status: 3
+tags: []
+user_id: root

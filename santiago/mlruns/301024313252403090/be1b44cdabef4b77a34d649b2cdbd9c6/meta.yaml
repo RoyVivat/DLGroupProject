@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/be1b44cdabef4b77a34d649b2cdbd9c6/artifacts
+end_time: 1745172696282
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: be1b44cdabef4b77a34d649b2cdbd9c6
+run_name: likeable-kite-3
+run_uuid: be1b44cdabef4b77a34d649b2cdbd9c6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745172658266
+status: 3
+tags: []
+user_id: root

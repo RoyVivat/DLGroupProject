@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/bb13e6eb660b4b22b7c713c7b73f8eca/artifacts
+end_time: 1745441501369
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: bb13e6eb660b4b22b7c713c7b73f8eca
+run_name: nosy-wolf-479
+run_uuid: bb13e6eb660b4b22b7c713c7b73f8eca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745441495129
+status: 3
+tags: []
+user_id: root

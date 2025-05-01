@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/77672004a0c440b28963614c5b315734/artifacts
+end_time: 1745276638944
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 77672004a0c440b28963614c5b315734
+run_name: smiling-hawk-131
+run_uuid: 77672004a0c440b28963614c5b315734
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745276131533
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/884775495f7b4a42a33459d63a9cb48c/artifacts
+end_time: 1745549434168
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 884775495f7b4a42a33459d63a9cb48c
+run_name: righteous-flea-308
+run_uuid: 884775495f7b4a42a33459d63a9cb48c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745549424584
+status: 3
+tags: []
+user_id: root

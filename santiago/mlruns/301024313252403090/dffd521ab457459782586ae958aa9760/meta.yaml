@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/dffd521ab457459782586ae958aa9760/artifacts
+end_time: 1745968694155
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: dffd521ab457459782586ae958aa9760
+run_name: unruly-mouse-893
+run_uuid: dffd521ab457459782586ae958aa9760
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745967060861
+status: 3
+tags: []
+user_id: root

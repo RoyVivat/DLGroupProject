@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/6721b24d2aa14bb78f28864bc11db48d/artifacts
+end_time: 1745171770944
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 6721b24d2aa14bb78f28864bc11db48d
+run_name: painted-stag-835
+run_uuid: 6721b24d2aa14bb78f28864bc11db48d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745171758184
+status: 3
+tags: []
+user_id: santiagovelez

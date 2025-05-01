@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/fbbd1d03fa164de2a040174a8fe3a92d/artifacts
+end_time: 1745548369874
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: fbbd1d03fa164de2a040174a8fe3a92d
+run_name: zealous-goat-94
+run_uuid: fbbd1d03fa164de2a040174a8fe3a92d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745548358628
+status: 3
+tags: []
+user_id: root

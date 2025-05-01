@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/0e077a698b774b3ba95eb005a6ba7e1b/artifacts
+end_time: 1745239412248
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 0e077a698b774b3ba95eb005a6ba7e1b
+run_name: hilarious-cub-632
+run_uuid: 0e077a698b774b3ba95eb005a6ba7e1b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745239203662
+status: 3
+tags: []
+user_id: root

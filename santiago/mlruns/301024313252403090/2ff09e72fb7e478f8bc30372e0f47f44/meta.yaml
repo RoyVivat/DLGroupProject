@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/2ff09e72fb7e478f8bc30372e0f47f44/artifacts
+end_time: 1745550834020
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 2ff09e72fb7e478f8bc30372e0f47f44
+run_name: dashing-skunk-814
+run_uuid: 2ff09e72fb7e478f8bc30372e0f47f44
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745550739209
+status: 3
+tags: []
+user_id: root

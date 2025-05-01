@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/691453337c494a039cb590374a32f4fe/artifacts
+end_time: 1745546868097
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 691453337c494a039cb590374a32f4fe
+run_name: overjoyed-ant-71
+run_uuid: 691453337c494a039cb590374a32f4fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745546867768
+status: 3
+tags: []
+user_id: root

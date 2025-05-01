@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/5e6436c9876b4f7588fe480f726f17a3/artifacts
+end_time: 1745547047345
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 5e6436c9876b4f7588fe480f726f17a3
+run_name: capricious-croc-753
+run_uuid: 5e6436c9876b4f7588fe480f726f17a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745547047017
+status: 3
+tags: []
+user_id: root

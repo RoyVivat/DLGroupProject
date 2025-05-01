@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/3a27f05e9b9a454d9535100071667b16/artifacts
+end_time: 1746058879283
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 3a27f05e9b9a454d9535100071667b16
+run_name: capable-cat-369
+run_uuid: 3a27f05e9b9a454d9535100071667b16
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746053980854
+status: 3
+tags: []
+user_id: root

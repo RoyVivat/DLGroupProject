@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/17e23f97c36d4c6b980f3629f8e82dd5/artifacts
+end_time: 1745266562748
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 17e23f97c36d4c6b980f3629f8e82dd5
+run_name: worried-bass-264
+run_uuid: 17e23f97c36d4c6b980f3629f8e82dd5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745266559927
+status: 3
+tags: []
+user_id: root

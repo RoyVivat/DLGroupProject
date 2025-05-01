@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/1d1d1691aeeb4a8585fd2a4c438b63c3/artifacts
+end_time: 1745983697094
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 1d1d1691aeeb4a8585fd2a4c438b63c3
+run_name: gregarious-wren-52
+run_uuid: 1d1d1691aeeb4a8585fd2a4c438b63c3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745983593262
+status: 3
+tags: []
+user_id: root

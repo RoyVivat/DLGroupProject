@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/df11236d2c4a470aa97aaed2e360a66e/artifacts
+end_time: 1746029958349
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: df11236d2c4a470aa97aaed2e360a66e
+run_name: grandiose-carp-988
+run_uuid: df11236d2c4a470aa97aaed2e360a66e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746029872814
+status: 3
+tags: []
+user_id: root

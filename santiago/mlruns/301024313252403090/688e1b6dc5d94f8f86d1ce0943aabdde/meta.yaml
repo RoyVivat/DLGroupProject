@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/688e1b6dc5d94f8f86d1ce0943aabdde/artifacts
+end_time: 1746030092649
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 688e1b6dc5d94f8f86d1ce0943aabdde
+run_name: charming-bee-272
+run_uuid: 688e1b6dc5d94f8f86d1ce0943aabdde
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746030085244
+status: 3
+tags: []
+user_id: root

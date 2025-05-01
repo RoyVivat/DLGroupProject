@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/31fbff99b2414c1880beed531eb8914e/artifacts
+end_time: 1745251726855
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 31fbff99b2414c1880beed531eb8914e
+run_name: spiffy-elk-807
+run_uuid: 31fbff99b2414c1880beed531eb8914e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745251725949
+status: 3
+tags: []
+user_id: root

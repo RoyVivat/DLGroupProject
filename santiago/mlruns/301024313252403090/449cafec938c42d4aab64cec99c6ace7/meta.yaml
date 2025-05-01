@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/449cafec938c42d4aab64cec99c6ace7/artifacts
+end_time: 1745349747661
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 449cafec938c42d4aab64cec99c6ace7
+run_name: popular-frog-743
+run_uuid: 449cafec938c42d4aab64cec99c6ace7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745348183924
+status: 3
+tags: []
+user_id: root

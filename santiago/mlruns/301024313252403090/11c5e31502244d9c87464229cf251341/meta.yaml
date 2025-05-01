@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/11c5e31502244d9c87464229cf251341/artifacts
+end_time: 1745429282554
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 11c5e31502244d9c87464229cf251341
+run_name: debonair-conch-286
+run_uuid: 11c5e31502244d9c87464229cf251341
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745427222047
+status: 3
+tags: []
+user_id: root

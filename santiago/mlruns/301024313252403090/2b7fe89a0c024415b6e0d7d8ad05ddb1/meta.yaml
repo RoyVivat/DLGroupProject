@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/2b7fe89a0c024415b6e0d7d8ad05ddb1/artifacts
+end_time: 1745351442099
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 2b7fe89a0c024415b6e0d7d8ad05ddb1
+run_name: powerful-newt-277
+run_uuid: 2b7fe89a0c024415b6e0d7d8ad05ddb1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745349843836
+status: 3
+tags: []
+user_id: root

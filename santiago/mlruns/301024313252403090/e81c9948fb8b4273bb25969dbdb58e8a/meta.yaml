@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/e81c9948fb8b4273bb25969dbdb58e8a/artifacts
+end_time: 1745971178417
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: e81c9948fb8b4273bb25969dbdb58e8a
+run_name: sneaky-shrew-260
+run_uuid: e81c9948fb8b4273bb25969dbdb58e8a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745971177112
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/a8f0030532704d2491ae44d5ec8f701a/artifacts
+end_time: 1745258996521
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: a8f0030532704d2491ae44d5ec8f701a
+run_name: stylish-ray-18
+run_uuid: a8f0030532704d2491ae44d5ec8f701a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745258994596
+status: 3
+tags: []
+user_id: root

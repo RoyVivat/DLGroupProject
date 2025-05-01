@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/80051d5b7eb74596b5e71bef18b03762/artifacts
+end_time: 1745423211487
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 80051d5b7eb74596b5e71bef18b03762
+run_name: placid-grub-909
+run_uuid: 80051d5b7eb74596b5e71bef18b03762
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745423211244
+status: 3
+tags: []
+user_id: root

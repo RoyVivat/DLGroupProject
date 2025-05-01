@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/aa40365fd57346d59fde79556b1d9188/artifacts
+end_time: 1745986654873
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: aa40365fd57346d59fde79556b1d9188
+run_name: melodic-goose-662
+run_uuid: aa40365fd57346d59fde79556b1d9188
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745986653841
+status: 3
+tags: []
+user_id: root

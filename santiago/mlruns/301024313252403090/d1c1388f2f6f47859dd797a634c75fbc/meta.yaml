@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/d1c1388f2f6f47859dd797a634c75fbc/artifacts
+end_time: 1745266558835
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: d1c1388f2f6f47859dd797a634c75fbc
+run_name: painted-ape-154
+run_uuid: d1c1388f2f6f47859dd797a634c75fbc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745265564837
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/a6e6cca7c86046aba4db416534faaf7f/artifacts
+end_time: 1745256354398
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: a6e6cca7c86046aba4db416534faaf7f
+run_name: skittish-shrimp-184
+run_uuid: a6e6cca7c86046aba4db416534faaf7f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745256352421
+status: 3
+tags: []
+user_id: root

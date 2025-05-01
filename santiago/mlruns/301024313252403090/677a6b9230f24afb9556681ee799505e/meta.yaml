@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/677a6b9230f24afb9556681ee799505e/artifacts
+end_time: 1745989184506
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 677a6b9230f24afb9556681ee799505e
+run_name: sedate-pug-776
+run_uuid: 677a6b9230f24afb9556681ee799505e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745986799943
+status: 3
+tags: []
+user_id: root

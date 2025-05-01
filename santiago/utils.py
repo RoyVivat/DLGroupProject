@@ -82,7 +82,7 @@ def compute_rouge(
     metrics = ("rouge1", "rouge2", "rougeL")
 ):
     # Builds rogue scorer and aggregator
-    scorer      = rouge_scorer.RougeScorer(metrics, use_stemmer=True)
+    scorer = rouge_scorer.RougeScorer(metrics, use_stemmer=True)
     aggregator  = scoring.BootstrapAggregator()
 
     # Adds scores to aggregator
@@ -102,3 +102,31 @@ def compute_rouge(
         }
 
     return metrics_dict
+
+
+def dynamic_pad_collate(batch, pad_id, ignore_id=-100):
+    xs, ys = zip(*batch)
+    trimmed_x, trimmed_y = [], []
+
+    # Trim trailing PADs sample-wise
+    for x, y in zip(xs, ys):
+        true_len = (x != pad_id).nonzero()
+        true_len = true_len[-1, 0] + 1
+        trimmed_x.append(x[:true_len])
+        trimmed_y.append(y[:true_len])
+
+    # Pad to the longest sample in this batch
+    max_len = max(t.size(0) for t in trimmed_x)
+    B = len(batch)
+
+    x_padded = trimmed_x[0].new_full((B, max_len), pad_id)
+    y_padded = trimmed_y[0].new_full((B, max_len), ignore_id)
+
+    for i, (x_i, y_i) in enumerate(zip(trimmed_x, trimmed_y)):
+        L = x_i.size(0)
+        x_padded[i, :L] = x_i
+        y_padded[i, :L] = y_i
+
+    return x_padded, y_padded
+
+

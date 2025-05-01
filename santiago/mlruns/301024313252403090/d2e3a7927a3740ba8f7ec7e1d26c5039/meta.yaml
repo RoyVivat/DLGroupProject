@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/d2e3a7927a3740ba8f7ec7e1d26c5039/artifacts
+end_time: 1745280415533
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: d2e3a7927a3740ba8f7ec7e1d26c5039
+run_name: auspicious-slug-271
+run_uuid: d2e3a7927a3740ba8f7ec7e1d26c5039
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745279914476
+status: 3
+tags: []
+user_id: root

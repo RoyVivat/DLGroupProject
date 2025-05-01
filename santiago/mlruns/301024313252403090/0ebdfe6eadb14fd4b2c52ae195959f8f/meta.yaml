@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/0ebdfe6eadb14fd4b2c52ae195959f8f/artifacts
+end_time: 1745439741023
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 0ebdfe6eadb14fd4b2c52ae195959f8f
+run_name: agreeable-cow-866
+run_uuid: 0ebdfe6eadb14fd4b2c52ae195959f8f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745439740778
+status: 3
+tags: []
+user_id: root

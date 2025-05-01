@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/c39054e9872a4b49b0bd29d7b5c96806/artifacts
+end_time: 1745429285684
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: c39054e9872a4b49b0bd29d7b5c96806
+run_name: rogue-snipe-596
+run_uuid: c39054e9872a4b49b0bd29d7b5c96806
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745429283577
+status: 3
+tags: []
+user_id: root

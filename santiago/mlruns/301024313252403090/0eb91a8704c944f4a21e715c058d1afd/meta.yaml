@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/0eb91a8704c944f4a21e715c058d1afd/artifacts
+end_time: 1745440251931
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 0eb91a8704c944f4a21e715c058d1afd
+run_name: handsome-shrimp-798
+run_uuid: 0eb91a8704c944f4a21e715c058d1afd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745440251315
+status: 3
+tags: []
+user_id: root

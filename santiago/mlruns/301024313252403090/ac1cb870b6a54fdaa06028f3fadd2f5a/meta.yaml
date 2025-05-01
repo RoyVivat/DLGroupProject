@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/ac1cb870b6a54fdaa06028f3fadd2f5a/artifacts
+end_time: 1745424851949
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: ac1cb870b6a54fdaa06028f3fadd2f5a
+run_name: grandiose-vole-229
+run_uuid: ac1cb870b6a54fdaa06028f3fadd2f5a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745424851703
+status: 3
+tags: []
+user_id: root

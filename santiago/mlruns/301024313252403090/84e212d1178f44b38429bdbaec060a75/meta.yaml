@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/84e212d1178f44b38429bdbaec060a75/artifacts
+end_time: 1746069378036
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 84e212d1178f44b38429bdbaec060a75
+run_name: beautiful-turtle-912
+run_uuid: 84e212d1178f44b38429bdbaec060a75
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746066836667
+status: 3
+tags: []
+user_id: root

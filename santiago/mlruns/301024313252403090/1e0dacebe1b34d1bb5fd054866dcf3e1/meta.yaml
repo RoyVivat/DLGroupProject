@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/1e0dacebe1b34d1bb5fd054866dcf3e1/artifacts
+end_time: 1745253520452
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 1e0dacebe1b34d1bb5fd054866dcf3e1
+run_name: upbeat-skink-239
+run_uuid: 1e0dacebe1b34d1bb5fd054866dcf3e1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745253515353
+status: 3
+tags: []
+user_id: root

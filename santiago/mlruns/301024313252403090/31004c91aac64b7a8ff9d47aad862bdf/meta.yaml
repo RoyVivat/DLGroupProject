@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/31004c91aac64b7a8ff9d47aad862bdf/artifacts
+end_time: 1745173140427
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 31004c91aac64b7a8ff9d47aad862bdf
+run_name: burly-lynx-554
+run_uuid: 31004c91aac64b7a8ff9d47aad862bdf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745173138119
+status: 3
+tags: []
+user_id: root

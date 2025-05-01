@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/db800bc2adad478d8cd3b82ce2b1d15c/artifacts
+end_time: 1745617188734
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: db800bc2adad478d8cd3b82ce2b1d15c
+run_name: amusing-lamb-773
+run_uuid: db800bc2adad478d8cd3b82ce2b1d15c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745615607775
+status: 3
+tags: []
+user_id: root

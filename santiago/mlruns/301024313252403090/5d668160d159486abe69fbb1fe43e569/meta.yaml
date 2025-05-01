@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/5d668160d159486abe69fbb1fe43e569/artifacts
+end_time: 1746041451391
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 5d668160d159486abe69fbb1fe43e569
+run_name: unleashed-hog-915
+run_uuid: 5d668160d159486abe69fbb1fe43e569
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746039854429
+status: 3
+tags: []
+user_id: root

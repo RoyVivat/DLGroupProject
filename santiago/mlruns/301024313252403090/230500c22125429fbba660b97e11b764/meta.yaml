@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/santiagovelez/Documents/homework/project/mlruns/301024313252403090/230500c22125429fbba660b97e11b764/artifacts
+end_time: 1745240096246
+entry_point_name: ''
+experiment_id: '301024313252403090'
+lifecycle_stage: active
+run_id: 230500c22125429fbba660b97e11b764
+run_name: omniscient-fly-780
+run_uuid: 230500c22125429fbba660b97e11b764
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745239816149
+status: 3
+tags: []
+user_id: root
