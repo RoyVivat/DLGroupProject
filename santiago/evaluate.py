@@ -60,6 +60,6 @@ def evaluate_test_set():
     return rouge
 
 
-# run directly:  python evaluate_test_set.py
+# Run it with a simple call
 if __name__ == "__main__":
     evaluate_test_set()
