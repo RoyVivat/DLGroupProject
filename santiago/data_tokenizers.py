@@ -100,7 +100,7 @@ class SentencePieceTokenizer(BaseTokenizer):
                 pad_id = 0,
                 unk_id = 1,
                 bos_id = -1, 
-                eos_id=-1,
+                eos_id = -1,
                 user_defined_symbols = SPECIAL
             )
             os.remove(corpus_path)

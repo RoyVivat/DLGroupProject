@@ -117,13 +117,13 @@ class LanguageModel(nn.Module):
                         finished.append((seq_, score_))
                         continue
 
-                    logits = self(seq_.unsqueeze(0))[0, -1]          # (V,)
+                    logits = self(seq_.unsqueeze(0))[0, -1]
                     log_probs, top_ids = logits.log_softmax(-1).topk(beam_size)
                     for lp, idx in zip(log_probs, top_ids):
                         new_seq  = torch.cat([seq_, idx.unsqueeze(0)])
                         new_beams.append((new_seq, score_ + lp.item()))
 
-                # length-penalised sorting
+                # Penalizing longer sequences
                 beams = sorted(
                     new_beams, 
                     key=lambda x: x[1] / ((5 + len(x[0])) ** length_penalty), 
@@ -137,7 +137,7 @@ class LanguageModel(nn.Module):
             sep_pos = (best_seq == self.sep_id).nonzero(as_tuple=True)[0][0] + 1
             eos_pos = (best_seq == self.eos_id).nonzero(as_tuple=True)[0]
             eos_pos = eos_pos[0] if len(eos_pos) else len(best_seq)
-            ids     = best_seq[sep_pos:eos_pos].tolist()
+            ids = best_seq[sep_pos:eos_pos].tolist()
 
             if hasattr(self.tokenizer, "sp"):
                 return self.tokenizer.sp.decode(ids)

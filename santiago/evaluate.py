@@ -19,9 +19,9 @@ def evaluate_test_set():
 
     print(f"Initializing {params['tokenizer']} tokenizer")
     tokenizer = tokenizers_dict[params["tokenizer"]](
-        sequence_raw = [],                # <- no training, just to init vocab
-        vocab_size   = params["vocab_size"],
-        max_len      = params["max_len"],
+        sequence_raw = [],
+        vocab_size = params["vocab_size"],
+        max_len = params["max_len"],
         min_summary_length = params["min_summary_length"],
     )
 
@@ -40,7 +40,7 @@ def evaluate_test_set():
     model.eval()
 
     print(f"Loading test data from {test_csv}")
-    df   = pd.read_csv(test_csv)[["diff_text", "summary"]].dropna()
+    df = pd.read_csv(test_csv)[["diff_text", "summary"]].dropna()
     diffs, refs = df["diff_text"].tolist(), df["summary"].tolist()
     print(f"Found {len(diffs)} test examples")
 
@@ -48,13 +48,8 @@ def evaluate_test_set():
     preds = []
     with torch.no_grad():
         for i, diff in enumerate(diffs):
-            if (i + 1) % 10 == 0:
-                print(f"Processed {i+1}/{len(diffs)} examples")
-            preds.append(model.generate(
-                diff,
-                beam_size,
-                length_penalty,
-            ))
+            print(f"Processed {i+1}/{len(diffs)} examples")
+            preds.append(model.generate(diff, beam_size, length_penalty))
 
     print("\nComputing ROUGE scores...")
     rouge = compute_rouge(preds, refs)

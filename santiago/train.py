@@ -137,8 +137,8 @@ total_updates = epochs * updates_per_epoch
 warmup_steps = int(0.06 * total_updates) if warmup_steps is None else warmup_steps
 scheduler = get_linear_schedule_with_warmup(
     optimizer,
-    num_warmup_steps  = warmup_steps,
-    num_training_steps= total_updates,
+    num_warmup_steps = warmup_steps,
+    num_training_steps = total_updates,
 )
 # Automatic Mixed Precision (only if CUDA is available)
 use_amp = device == "cuda"
@@ -185,7 +185,6 @@ mlflow.log_params({
 sequence_lengths_stats = tokenizer.get_sequence_statistics(sequence_lengths)
 sequence_lengths_stats = {f"sequence_length_{k.replace('%', '_perc')}": v for k, v in sequence_lengths_stats.items()}
 mlflow.log_params(sequence_lengths_stats)
-
 
 
 print("Starting training...")
